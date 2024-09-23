@@ -1,6 +1,12 @@
 {
-  "name": "yev-starter",
   "private": true,
+  "packageManager": "pnpm@8.15.6",
+  "name": "yev-starter",
+  "engines": {
+    "node": ">= 18",
+    "pnpm": ">= 8.15"
+  },
+  "description": "",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -11,9 +17,5 @@
     "prettier": "^3.2.5",
     "turbo": "^2.1.2",
     "typescript": "^5.4.5"
-  },
-  "packageManager": "pnpm@8.15.6",
-  "engines": {
-    "node": ">=18"
   }
 }
