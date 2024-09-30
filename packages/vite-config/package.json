@@ -1,0 +1,31 @@
+{
+  "private": "true",
+  "type": "module",
+  "name": "@yev-stater/vite-config",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pnpm unbuild --stub"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "find-up": "^7.0.0"
+  }
+}

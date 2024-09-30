@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "private": "true",
+  "name": "@yev-stater/tsconfig",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "files": [
+    "base.json",
+    "node.json"
+  ]
+}
