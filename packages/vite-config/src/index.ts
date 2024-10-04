@@ -1,11 +1,10 @@
-import { type UserConfig, mergeConfig, defineConfig } from 'vite'
+import { type UserConfig, mergeConfig, defineConfig, type Plugin } from 'vite'
 import { loadAndConvertEnv } from './utils/env'
 import type { DefineApplicationConfig } from './typings'
 import { findUpSync } from 'find-up'
 import path, { dirname, relative } from 'node:path'
 import { loadApplicationPlugins } from './plugins'
 import type { Options as PWAPluginOptions } from 'vite-plugin-pwa'
-
 export function defineApplicationConfig(
   userConfigPromise?: DefineApplicationConfig
 ) {
@@ -21,6 +20,7 @@ export function defineApplicationConfig(
       pwa: true,
       pwaOptions: getDefaultPwaOptions(appTitle)
     })
+
     const applicationConfig: UserConfig = {
       base,
       plugins,
