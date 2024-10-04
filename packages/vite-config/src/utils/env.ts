@@ -48,15 +48,19 @@ export async function loadEnv<T = Record<string, string>>(
 export async function loadAndConvertEnv(
   match = 'VITE_',
   confFile = getConfigFiles()
-): Promise<{ appTitle: string; base: string }> {
+): Promise<{ appTitle: string; base: string; port: number }> {
   const envConfig = await loadEnv(match, confFile)
 
-  const { VITE_APP_TITLE, VITE_BASE } = envConfig
+  const { VITE_APP_TITLE, VITE_BASE, VITE_PORT } = envConfig
 
   return {
     appTitle: getString(VITE_APP_TITLE, 'yev-stater'),
-    base: getString(VITE_BASE, '/')
+    base: getString(VITE_BASE, '/'),
+    port: getNumber(VITE_PORT, 2015)
   }
 }
 const getString = (value: string | undefined, fallback: string) =>
   value ?? fallback
+
+const getNumber = (value: string | undefined, fallback: number) =>
+  Number(value) || fallback
