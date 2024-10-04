@@ -1,0 +1,40 @@
+{
+  "private": "true",
+  "license": "MIT",
+  "name": "@yev-stater/uno-config",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm unbuild --stub"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./*": "./*"
+  },
+  "peerDependencies": {
+    "unocss": "0.62.2"
+  },
+  "author": "",
+  "description": "",
+  "devDependencies": {
+    "@unocss/preset-rem-to-px": "0.62.2"
+  }
+}
