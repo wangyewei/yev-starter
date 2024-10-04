@@ -1,4 +1,5 @@
 {
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@8.15.6",
   "name": "yev-starter",
@@ -8,14 +9,18 @@
   },
   "description": "",
   "scripts": {
-    "build": "turbo build",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@yev-stater/tsconfig": "workspace:*",
+    "cross-env": "^7.0.3",
     "prettier": "^3.2.5",
     "turbo": "^2.1.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0",
+    "vite": "^5.4.8"
   }
 }

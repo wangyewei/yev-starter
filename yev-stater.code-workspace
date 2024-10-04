@@ -1,0 +1,18 @@
+[
+  {
+    "folders": [
+      {
+        "name": "@yev-stater/tsconfig",
+        "path": "packages/tsconfig"
+      },
+      {
+        "name": "@yev-stater/vite-config",
+        "path": "packages/vite-config"
+      },
+      {
+        "name": "@yev-stater/vue-js-template",
+        "path": "apps/vue-js-template"
+      }
+    ]
+  }
+]

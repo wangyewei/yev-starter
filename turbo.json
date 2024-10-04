@@ -1,11 +1,17 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "ui": "tui",
+  "globalDependencies": [
+    "pnpm-lock.yaml",
+    "**/tsconfig*.json",
+    "packages/vite-config/*.json",
+    "packages/vite-config/src/**/*.ts"
+  ],
+  "globalEnv": ["NODE_ENV"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+ 
+      "outputs": ["dist/**"]
     },
     "lint": {
       "dependsOn": ["^lint"]
@@ -13,6 +19,7 @@
     "dev": {
       "cache": false,
       "persistent": true
-    }
+    },
+    "stub": {}
   }
 }
