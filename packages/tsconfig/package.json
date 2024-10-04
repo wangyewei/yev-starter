@@ -5,10 +5,16 @@
   "version": "1.0.0",
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "files": [
     "base.json",
-    "node.json"
-  ]
+    "node.json",
+    "web-app.json",
+    "web.json",
+    "react.json"
+  ],
+  "devDependencies": {
+    "vite": "^5.4.8"
+  }
 }
