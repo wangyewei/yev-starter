@@ -1,6 +1,8 @@
 import type { PluginOption } from 'vite'
 import type { ApplicationPluginOptions, ConditionPlugin } from '../typings'
 import { VitePWA } from 'vite-plugin-pwa'
+import viteVue from '@vitejs/plugin-vue'
+import viteVueJsx from '@vitejs/plugin-vue-jsx'
 
 export async function loadApplicationPlugins(
   options: ApplicationPluginOptions
@@ -24,6 +26,18 @@ export async function loadApplicationPlugins(
             ...pwaOptions?.manifest
           }
         })
+    },
+    {
+      condition: true,
+      plugins: () => [
+        viteVue({
+          script: {
+            defineModel: true
+            // propsDestructure: true,
+          }
+        }),
+        viteVueJsx()
+      ]
     }
   ])
 }

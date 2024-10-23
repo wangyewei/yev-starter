@@ -1,8 +1,9 @@
 {
+  "name": "@yev-stater-plugin/version-gen",
+  "packageManager": "pnpm@8.15.6",
   "private": "true",
   "type": "module",
-  "name": "@yev-stater/vite-config",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "scripts": {
     "stub": "pnpm unbuild --stub"
   },
@@ -19,16 +20,7 @@
     }
   },
   "keywords": [],
-  "author": "",
+  "author": "Yev(Yewei) Wang",
   "license": "MIT",
-  "description": "",
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.1.4",
-    "@vitejs/plugin-vue-jsx": "^4.0.1",
-    "dotenv": "^16.4.5"
-  },
-  "dependencies": {
-    "find-up": "^7.0.0",
-    "vite-plugin-pwa": "^0.20.5"
-  }
+  "description": ""
 }

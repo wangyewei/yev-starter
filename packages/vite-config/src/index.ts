@@ -1,4 +1,4 @@
-import { type UserConfig, mergeConfig, defineConfig, type Plugin } from 'vite'
+import { type UserConfig, mergeConfig, defineConfig } from 'vite'
 import { loadAndConvertEnv } from './utils/env'
 import type { DefineApplicationConfig } from './typings'
 import { findUpSync } from 'find-up'

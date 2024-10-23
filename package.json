@@ -9,11 +9,11 @@
   },
   "description": "",
   "scripts": {
+    "bootstrap": "pnpm i && turbo stub",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "dev:pdd": "pnpm run -F=pdd-h5 dev"
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "@types/node": "^22.7.4",

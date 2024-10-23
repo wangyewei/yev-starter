@@ -10,8 +10,8 @@
         "path": "packages/vite-config"
       },
       {
-        "name": "@yev-stater/vue-js-template",
-        "path": "apps/vue-js-template"
+        "name": "@yev-stater/vue-ts-template",
+        "path": "apps/vue-ts-template"
       }
     ]
   }
