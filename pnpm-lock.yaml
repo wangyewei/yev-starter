@@ -61,8 +61,8 @@ importers:
         version: 0.62.2(postcss@8.4.47)(rollup@3.29.5)(vite@5.4.8)
     devDependencies:
       '@unocss/preset-rem-to-px':
-        specifier: 0.62.2
-        version: 0.62.2
+        specifier: 0.65.3
+        version: 0.65.3
 
   packages/vite-config:
     dependencies:
@@ -2573,9 +2573,14 @@ packages:
 
   /@unocss/core@0.62.2:
     resolution: {integrity: sha512-86jEFUJ/PSwdb1qqiEi0lWlewfKLQwiH+JAfnh8c2hLjOPVmCkb0nnsYSMh8drmtN5kpk6E06mN0IrKMO7OnvQ==}
+    dev: false
 
   /@unocss/core@0.63.3:
     resolution: {integrity: sha512-LPDog+Dt36ut9yomgpKDHn4j/kI72sWtxm3iL6agEK3NDQToQsizQU6f8ZsIyUrpi7CoIV2i+3vmsdxauBd4kw==}
+    dev: true
+
+  /@unocss/core@0.65.3:
+    resolution: {integrity: sha512-xYkJ63lIadL6KqvGcaE2fFeLvo6rC1F+e+R9EFn0Aj0ArMRhiltZk8vvLFHP7iYjjdTdqDkAr/7IdrTosTo8Pg==}
     dev: true
 
   /@unocss/extractor-arbitrary-variants@0.62.2:
@@ -2689,10 +2694,10 @@ packages:
       '@unocss/rule-utils': 0.63.3
     dev: true
 
-  /@unocss/preset-rem-to-px@0.62.2:
-    resolution: {integrity: sha512-PrUXEx6jD7Iecv+CrncTGqNV7LS17GEZYFxFXymK1aQOkq5sao+UOWVJDep4ZUT0oHHjTnNwckYe8tbP5t/rtA==}
+  /@unocss/preset-rem-to-px@0.65.3:
+    resolution: {integrity: sha512-KYvPonskiJ4oGxtncFyiInSwRAmnVLbPgBYj/4PxK2U+iPcWzW4Xi2x1NYct88uzXIzCWZziiIM8Bu9JTn4iOQ==}
     dependencies:
-      '@unocss/core': 0.62.2
+      '@unocss/core': 0.65.3
     dev: true
 
   /@unocss/preset-tagify@0.62.2:
