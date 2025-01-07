@@ -23,7 +23,7 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.1.4",
+    "@vitejs/plugin-vue": "^5.2.1",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
     "dotenv": "^16.4.5"
   },
