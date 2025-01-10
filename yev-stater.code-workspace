@@ -12,6 +12,10 @@
       {
         "name": "@yev-stater/vue-ts-template",
         "path": "apps/vue-ts-template"
+      },
+      {
+        "name": "@yev-apps/mobile",
+        "path": "apps/mobile"
       }
     ]
   }

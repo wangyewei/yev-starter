@@ -11,6 +11,7 @@
   "description": "",
   "scripts": {
     "bootstrap": "pnpm i && turbo stub",
+    "create-app": "esno ./scripts/create-app.mts",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
@@ -21,7 +22,9 @@
     "@yev-stater/tsconfig": "workspace:*",
     "@yev-stater/uno-config": "workspace:*",
     "@yev-stater/vite-config": "workspace:*",
+    "chalk": "^5.4.1",
     "cross-env": "^7.0.3",
+    "esno": "^4.8.0",
     "prettier": "^3.4.2",
     "turbo": "^2.1.2",
     "typescript": "^5.7.2",

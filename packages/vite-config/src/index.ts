@@ -107,3 +107,5 @@ function getDefaultPwaOptions(name: string): Partial<PWAPluginOptions> {
     }
   }
 }
+
+export * from './utils/env'
