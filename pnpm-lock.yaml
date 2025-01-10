@@ -40,11 +40,11 @@ importers:
         specifier: ^2.1.2
         version: 2.1.2
       typescript:
-        specifier: ^5.7.2
-        version: 5.7.2
+        specifier: ^5.7.3
+        version: 5.7.3
       unbuild:
         specifier: ^2.0.0
-        version: 2.0.0(typescript@5.7.2)
+        version: 2.0.0(typescript@5.7.3)
       unocss:
         specifier: ^0.63.3
         version: 0.63.3(postcss@8.4.49)(rollup@3.29.5)(vite@5.4.8)
@@ -2926,7 +2926,7 @@ packages:
       '@babel/plugin-transform-typescript': 7.25.7(@babel/core@7.25.2)
       '@vue/babel-plugin-jsx': 1.2.5(@babel/core@7.25.2)
       vite: 5.4.8(@types/node@22.7.4)
-      vue: 3.5.13(typescript@5.7.2)
+      vue: 3.5.13(typescript@5.7.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2939,7 +2939,7 @@ packages:
       vue: ^3.2.25
     dependencies:
       vite: 5.4.8(@types/node@22.7.4)
-      vue: 3.5.13(typescript@5.7.2)
+      vue: 3.5.13(typescript@5.7.3)
     dev: true
 
   /@vue/babel-helper-vue-transform-on@1.2.5:
@@ -3089,7 +3089,7 @@ packages:
     dependencies:
       '@vue/compiler-ssr': 3.5.13
       '@vue/shared': 3.5.13
-      vue: 3.5.13(typescript@5.7.2)
+      vue: 3.5.13(typescript@5.7.3)
     dev: true
 
   /@vue/shared@3.5.12:
@@ -4539,7 +4539,7 @@ packages:
     dependencies:
       brace-expansion: 2.0.1
 
-  /mkdist@1.5.9(typescript@5.7.2):
+  /mkdist@1.5.9(typescript@5.7.3):
     resolution: {integrity: sha512-PdJimzhcgDxaHpk1SUabw56gT3BU15vBHUTHkeeus8Kl7jUkpgG7+z0PiS/y23XXgO8TiU/dKP3L1oG55qrP1g==}
     hasBin: true
     peerDependencies:
@@ -4567,7 +4567,7 @@ packages:
       postcss: 8.4.47
       postcss-nested: 6.2.0(postcss@8.4.47)
       semver: 7.6.3
-      typescript: 5.7.2
+      typescript: 5.7.3
     dev: true
 
   /mlly@1.7.1:
@@ -5153,7 +5153,7 @@ packages:
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
 
-  /rollup-plugin-dts@6.1.1(rollup@3.29.5)(typescript@5.7.2):
+  /rollup-plugin-dts@6.1.1(rollup@3.29.5)(typescript@5.7.3):
     resolution: {integrity: sha512-aSHRcJ6KG2IHIioYlvAOcEq6U99sVtqDDKVhnwt70rW6tsz3tv5OSjEiWcgzfsHdLyGXZ/3b/7b/+Za3Y6r1XA==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -5162,7 +5162,7 @@ packages:
     dependencies:
       magic-string: 0.30.11
       rollup: 3.29.5
-      typescript: 5.7.2
+      typescript: 5.7.3
     optionalDependencies:
       '@babel/code-frame': 7.25.7
     dev: true
@@ -5634,8 +5634,8 @@ packages:
       possible-typed-array-names: 1.0.0
     dev: false
 
-  /typescript@5.7.2:
-    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+  /typescript@5.7.3:
+    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
@@ -5652,7 +5652,7 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: false
 
-  /unbuild@2.0.0(typescript@5.7.2):
+  /unbuild@2.0.0(typescript@5.7.3):
     resolution: {integrity: sha512-JWCUYx3Oxdzvw2J9kTAp+DKE8df/BnH/JTSj6JyA4SH40ECdFu7FoJJcrm8G92B7TjofQ6GZGjJs50TRxoH6Wg==}
     hasBin: true
     peerDependencies:
@@ -5676,15 +5676,15 @@ packages:
       hookable: 5.5.3
       jiti: 1.21.6
       magic-string: 0.30.11
-      mkdist: 1.5.9(typescript@5.7.2)
+      mkdist: 1.5.9(typescript@5.7.3)
       mlly: 1.7.1
       pathe: 1.1.2
       pkg-types: 1.2.0
       pretty-bytes: 6.1.1
       rollup: 3.29.5
-      rollup-plugin-dts: 6.1.1(rollup@3.29.5)(typescript@5.7.2)
+      rollup-plugin-dts: 6.1.1(rollup@3.29.5)(typescript@5.7.3)
       scule: 1.3.0
-      typescript: 5.7.2
+      typescript: 5.7.3
       untyped: 1.5.0
     transitivePeerDependencies:
       - sass
@@ -5923,7 +5923,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /vue@3.5.13(typescript@5.7.2):
+  /vue@3.5.13(typescript@5.7.3):
     resolution: {integrity: sha512-wmeiSMxkZCSc+PM2w2VRsOYAZC8GdipNFRTsLSfodVqI9mbejKeXEGr8SckuLnrQPGe3oJN5c3K0vpoU9q/wCQ==}
     peerDependencies:
       typescript: '*'
@@ -5936,7 +5936,7 @@ packages:
       '@vue/runtime-dom': 3.5.13
       '@vue/server-renderer': 3.5.13(vue@3.5.13)
       '@vue/shared': 3.5.13
-      typescript: 5.7.2
+      typescript: 5.7.3
     dev: true
 
   /webidl-conversions@4.0.2:
