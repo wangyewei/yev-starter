@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@unocss/reset':
-        specifier: ^0.65.4
-        version: 0.65.4
+        specifier: ^65.4.2
+        version: 65.4.2
     devDependencies:
       '@types/node':
         specifier: ^22.7.4
@@ -2788,8 +2788,8 @@ packages:
     resolution: {integrity: sha512-AByvjMrKYOMcqVQc659b3oF85B/np+wvsTRYGLHYf/ZLrBCkdKNWGHMDS3O6RuJUzYqKOzR4HiM0VJLw3BJU8Q==}
     dev: true
 
-  /@unocss/reset@0.65.4:
-    resolution: {integrity: sha512-m685H0KFvVMz6R2i5GDIFv4RS9Z7y2G8hJK7xg2OWli+7w8l2ZMihYvXKofPsst4q/ms8EgKXpWc/qqUOTucvA==}
+  /@unocss/reset@65.4.2:
+    resolution: {integrity: sha512-Sas0lTGEgzdWKafSiT+dyhhrUOkOpPbhJYbPMgjW6Ol/tB5JXhdlCNm90Xue1wt453P8O3J4v+dQcyrdRSq0Ig==}
     dev: false
 
   /@unocss/rule-utils@0.62.2:
