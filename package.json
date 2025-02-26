@@ -28,7 +28,7 @@
     "prettier": "^3.5.1",
     "turbo": "^2.4.2",
     "typescript": "^5.7.3",
-    "unbuild": "^3.3.1",
+    "unbuild": "^3.4.1",
     "unocss": "^65.4.3",
     "vite": "^6.1.0"
   },
