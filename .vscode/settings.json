@@ -16,5 +16,13 @@
     "eslint.config.mjs": ".eslintignore,.prettierignore,.stylelintignore,.commitlintrc.*,.prettierrc.*,stylelint.config.*,.lintstagedrc.mjs,.ls-lint*,cspell.json",
     "tailwind.config.mjs": "postcss.*"
   },
-  "cSpell.words": ["Attributify", "esno", "tsbuildinfo", "turborepo", "unocss"]
+  "cSpell.words": [
+    "Attributify",
+    "Dmap",
+    "esno",
+    "tianditu",
+    "tsbuildinfo",
+    "turborepo",
+    "unocss"
+  ]
 }

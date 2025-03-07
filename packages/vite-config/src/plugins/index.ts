@@ -3,6 +3,7 @@ import type { ApplicationPluginOptions, ConditionPlugin } from '../typings'
 import { VitePWA } from 'vite-plugin-pwa'
 import viteVue from '@vitejs/plugin-vue'
 import viteVueJsx from '@vitejs/plugin-vue-jsx'
+import viteUnocss from 'unocss/vite'
 
 export async function loadApplicationPlugins(
   options: ApplicationPluginOptions
@@ -38,6 +39,10 @@ export async function loadApplicationPlugins(
         }),
         viteVueJsx()
       ]
+    },
+    {
+      condition: true,
+      plugins: () => [viteUnocss()]
     }
   ])
 }

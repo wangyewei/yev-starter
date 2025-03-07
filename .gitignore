@@ -38,3 +38,7 @@ yarn-error.log*
 *.pem
 
 apps
+packages/tianditu-vision
+LICENSE
+README.md
+README_ZH.md
