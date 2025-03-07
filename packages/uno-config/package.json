@@ -35,6 +35,6 @@
   "author": "",
   "description": "",
   "devDependencies": {
-    "@unocss/preset-rem-to-px": "65.4.3"
+    "@unocss/preset-rem-to-px": "66.0.0"
   }
 }
