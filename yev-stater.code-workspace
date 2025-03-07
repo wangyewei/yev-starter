@@ -16,6 +16,10 @@
       {
         "name": "@yev-apps/mobile",
         "path": "apps/mobile"
+      },
+      {
+        "name": "tianditu-vision",
+        "path": "packages/tianditu-vision"
       }
     ]
   }
