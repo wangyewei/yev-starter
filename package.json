@@ -33,6 +33,6 @@
     "vite": "^6.2.1"
   },
   "dependencies": {
-    "@unocss/reset": "^65.4.3"
+    "@unocss/reset": "^66.0.0"
   }
 }
