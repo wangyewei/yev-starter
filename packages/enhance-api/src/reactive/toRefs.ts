@@ -14,15 +14,9 @@ export function toRefsWithDefault<T extends object>(
 ): { [K in keyof T]: T[K] extends Ref<any> ? T[K] : Ref<T[K] | undefined> } {
   const result: Partial<Record<keyof T, any>> = {}
 
-  Object.keys(props).forEach((key) => {
-    result[key as keyof T] = isRef(props[key as keyof T])
-      ? props[key as keyof T]
-      : ref(
-          props[key as keyof T] !== undefined
-            ? props[key as keyof T]
-            : defaults[key as keyof T]
-        )
-  })
+  for (const [key, value] of Object.entries(props)) {
+    result[key as keyof T] = isRef(value) ? value : ref(value !== undefined ? value : defaults[key as keyof T]);
+  }
 
   return result as {
     [K in keyof T]: T[K] extends Ref<any> ? T[K] : Ref<T[K] | undefined>
