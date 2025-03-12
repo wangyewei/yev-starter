@@ -14,8 +14,8 @@
         "path": "apps/vue-ts-template"
       },
       {
-        "name": "@yev-apps/mobile",
-        "path": "apps/mobile"
+        "name": "@yev-stater/shared",
+        "path": "packages/shared"
       },
       {
         "name": "tianditu-vision",

@@ -19,6 +19,8 @@
       "cache": false,
       "persistent": true
     },
-    "stub": {}
+    "stub": {
+      "dependsOn": ["^stub"]
+    }
   }
 }

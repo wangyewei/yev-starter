@@ -1,0 +1,29 @@
+{
+  "packageManager": "pnpm@8.15.6",
+  "name": "@yev-stater/vue-enhance-api",
+  "author": "Yev Wang",
+  "type": "module",
+  "license": "MIT",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "stub": "pnpm unbuild"
+  },
+  "devDependencies": {
+    "@yev-stater/tsconfig": "workspace:*"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.13"
+  }
+}

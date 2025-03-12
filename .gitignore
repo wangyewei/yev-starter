@@ -37,8 +37,11 @@ yarn-error.log*
 .DS_Store
 *.pem
 
-apps
-packages/tianditu-vision
+
 LICENSE
 README.md
 README_ZH.md
+
+apps
+
+packages/tianditu-vision
