@@ -18,7 +18,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@types/node": "^22.13.9",
+    "@types/node": "^22.15.2",
     "@yev-stater/tsconfig": "workspace:*",
     "@yev-stater/uno-config": "workspace:*",
     "@yev-stater/vite-config": "workspace:*",
