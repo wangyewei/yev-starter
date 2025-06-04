@@ -1,9 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@yev-stater/tsconfig/web-app.json",
+  "extends": "@yev-stater/tsconfig/react.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "types": ["vite/client", "vue", "node"],
     "paths": {
       "#/*": ["./src/*"]
     },
@@ -14,7 +13,6 @@
     "src",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "src/**/*.vue",
     "src/*.d.ts",
     "*.mts",
     "types",

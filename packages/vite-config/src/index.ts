@@ -1,12 +1,27 @@
-import { type UserConfig, mergeConfig, defineConfig } from 'vite'
+import {
+  type UserConfig,
+  mergeConfig,
+  defineConfig,
+  type PluginOption
+} from 'vite'
 import { loadAndConvertEnv } from './utils/env'
-import type { DefineApplicationConfig } from './typings'
+import type {
+  ApplicationPluginOptions,
+  DefineApplicationConfig
+} from './typings'
 import { findUpSync } from 'find-up'
 import path, { dirname, relative } from 'node:path'
-import { loadApplicationPlugins } from './plugins'
+import {
+  loadReactApplicationPlugins,
+  loadVueApplicationPlugins
+} from './plugins'
 import type { Options as PWAPluginOptions } from 'vite-plugin-pwa'
-export function defineApplicationConfig(
-  userConfigPromise?: DefineApplicationConfig
+
+function defineApplicationConfig(
+  userConfigPromise?: DefineApplicationConfig,
+  pluginsLoader: (
+    options: ApplicationPluginOptions
+  ) => Promise<PluginOption[]> = loadVueApplicationPlugins
 ) {
   return defineConfig(async (config) => {
     const options = await userConfigPromise?.(config)
@@ -16,7 +31,7 @@ export function defineApplicationConfig(
     const { base, appTitle, port } = await loadAndConvertEnv()
 
     const isBuild = command === 'build'
-    const plugins = await loadApplicationPlugins({
+    const plugins = await pluginsLoader({
       pwa: true,
       pwaOptions: getDefaultPwaOptions(appTitle)
     })
@@ -38,7 +53,6 @@ export function defineApplicationConfig(
         drop: isBuild ? ['debugger'] : [],
         legalComments: 'none'
       },
-
       css: createCssOptions(),
       server: {
         host: true,
@@ -51,6 +65,18 @@ export function defineApplicationConfig(
 
     return mergeConfig(applicationConfig, vite)
   })
+}
+
+export function defineVueAppConfig(
+  userConfigPromise?: DefineApplicationConfig
+) {
+  return defineApplicationConfig(userConfigPromise, loadVueApplicationPlugins)
+}
+
+export function defineReactAppConfig(
+  userConfigPromise?: DefineApplicationConfig
+) {
+  return defineApplicationConfig(userConfigPromise, loadReactApplicationPlugins)
 }
 
 function createCssOptions(injectGlobalScss = false) {
@@ -90,18 +116,7 @@ function getDefaultPwaOptions(name: string): Partial<PWAPluginOptions> {
     manifest: {
       description: 'YevStater is a personal web app scaffold',
 
-      icons: [
-        {
-          sizes: '192x192',
-          src: 'https://unpkg.com/@vbenjs/static-source@0.1.6/source/pwa-icon-192.png',
-          type: 'image/png'
-        },
-        {
-          sizes: '512x512',
-          src: 'https://unpkg.com/@vbenjs/static-source@0.1.6/source/pwa-icon-512.png',
-          type: 'image/png'
-        }
-      ],
+      icons: [],
       name: `${name}${isDevelopment ? ' dev' : ''}`,
       short_name: `${name}${isDevelopment ? ' dev' : ''}`
     }
