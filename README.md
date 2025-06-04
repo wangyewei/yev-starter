@@ -1,3 +1,7 @@
+<div align="right">
+  <a href="https://github.com/wangyewei/yev-starter/blob/main/README_ZH.md">中文</a> | <strong>English</strong>
+</div>
+
 # Yev Starter
 
 A TurboRepo template for modern web app development with integrated configurations.
