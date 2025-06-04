@@ -3,7 +3,6 @@
   "extends": "@yev-stater/tsconfig/web-app.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "types": ["vite/client", "vue", "node"],
     "paths": {
       "#/*": ["./src/*"]
     },

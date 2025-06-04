@@ -3,9 +3,10 @@ import type { ApplicationPluginOptions, ConditionPlugin } from '../typings'
 import { VitePWA } from 'vite-plugin-pwa'
 import viteVue from '@vitejs/plugin-vue'
 import viteVueJsx from '@vitejs/plugin-vue-jsx'
+import viteReact from '@vitejs/plugin-react'
 import viteUnocss from 'unocss/vite'
 
-export async function loadApplicationPlugins(
+async function loadCommonPlugins(
   options: ApplicationPluginOptions
 ): Promise<PluginOption[]> {
   const { pwaOptions, pwa } = options
@@ -30,21 +31,44 @@ export async function loadApplicationPlugins(
     },
     {
       condition: true,
+      plugins: () => [viteUnocss()]
+    }
+  ])
+}
+
+export async function loadVueApplicationPlugins(
+  options: ApplicationPluginOptions
+): Promise<PluginOption[]> {
+  const commonPlugins = await loadCommonPlugins(options)
+  const frameworkPlugins = await loadConditionPlugin([
+    {
+      condition: true,
       plugins: () => [
         viteVue({
           script: {
             defineModel: true
-            // propsDestructure: true,
           }
         }),
         viteVueJsx()
       ]
-    },
-    {
-      condition: true,
-      plugins: () => [viteUnocss()]
     }
   ])
+
+  return [...commonPlugins, ...frameworkPlugins]
+}
+
+export async function loadReactApplicationPlugins(
+  options: ApplicationPluginOptions
+): Promise<PluginOption[]> {
+  const commonPlugins = await loadCommonPlugins(options)
+  const frameworkPlugins = await loadConditionPlugin([
+    {
+      condition: true,
+      plugins: () => [viteReact()]
+    }
+  ])
+
+  return [...commonPlugins, ...frameworkPlugins]
 }
 
 async function loadConditionPlugin(conditionPlugins: ConditionPlugin[]) {
