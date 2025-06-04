@@ -6,9 +6,8 @@
 
 A TurboRepo template for modern web app development with integrated configurations.
 
-![GitHub License](https://img.shields.io/github/license/wangyewei/yev-stater)
+![GitHub License](https://img.shields.io/github/license/wangyewei/yev-starter)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/wangyewei/yev-starter/.github%2Fworkflows%2Fci.yaml)
-![GitHub stars](https://img.shields.io/github/stars/wangyewei/yev-starter?style=social)
 
 ## Features
 
