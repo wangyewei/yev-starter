@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@yev-stater/tsconfig/react.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#/*": ["./src/*"]
+    },
+    "noImplicitAny": false
+  },
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": [
+    "src",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/*.d.ts",
+    "*.mts",
+    "types",
+    "tsconfig.node.json"
+  ],
+  "exclude": ["node_modules"]
+}
