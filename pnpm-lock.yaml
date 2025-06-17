@@ -139,8 +139,8 @@ importers:
         version: 0.62.2(postcss@8.5.6)(rollup@4.43.0)(vite@5.4.19)
     devDependencies:
       '@unocss/preset-rem-to-px':
-        specifier: 66.2.1
-        version: 66.2.1
+        specifier: 66.2.2
+        version: 66.2.2
 
   packages/vite-config:
     dependencies:
@@ -2172,7 +2172,7 @@ packages:
       rollup:
         optional: true
     dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@2.79.2)
+      '@rollup/pluginutils': 5.2.0(rollup@2.79.2)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
@@ -2233,7 +2233,7 @@ packages:
       rollup: 2.79.2
       serialize-javascript: 6.0.2
       smob: 1.5.0
-      terser: 5.42.0
+      terser: 5.43.0
     dev: false
 
   /@rollup/pluginutils@3.1.0(rollup@2.79.2):
@@ -2245,21 +2245,6 @@ packages:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.3.1
-      rollup: 2.79.2
-    dev: false
-
-  /@rollup/pluginutils@5.1.4(rollup@2.79.2):
-    resolution: {integrity: sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-    dependencies:
-      '@types/estree': 1.0.8
-      estree-walker: 2.0.2
-      picomatch: 4.0.2
       rollup: 2.79.2
     dev: false
 
@@ -2276,6 +2261,21 @@ packages:
       estree-walker: 2.0.2
       picomatch: 4.0.2
       rollup: 4.43.0
+
+  /@rollup/pluginutils@5.2.0(rollup@2.79.2):
+    resolution: {integrity: sha512-qWJ2ZTbmumwiLFomfzTyt5Kng4hwPi9rwCYN4SHb6eaRU1KNO4ccxINHr/VhH4GgPlt1XfSTLX2LBTme8ne4Zw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@types/estree': 1.0.8
+      estree-walker: 2.0.2
+      picomatch: 4.0.2
+      rollup: 2.79.2
+    dev: false
 
   /@rollup/rollup-android-arm-eabi@4.43.0:
     resolution: {integrity: sha512-Krjy9awJl6rKbruhQDgivNbD1WuLb8xAclM4IR4cN5pHGAs2oIMMQJEiC3IC/9TZJ+QZkmZhlMO/6MBGxPidpw==}
@@ -2743,6 +2743,10 @@ packages:
     resolution: {integrity: sha512-iHhemq8NBHDpayvqfz/+Np8KvuktR0lJQiixy1uLSCYIKwauOKrpJoW/bzzEecY1LcdjEDeUuwW8r3DSdrfQGA==}
     dev: true
 
+  /@unocss/core@66.2.2:
+    resolution: {integrity: sha512-zegia0a9/ACYWSlPBQnrwvH/Eq+MpW8Jc3b3500JHu/4lo8/tmSQaDXnv3FvbuuBFDShSzxiieJY5WFjhE81gg==}
+    dev: true
+
   /@unocss/extractor-arbitrary-variants@0.62.2:
     resolution: {integrity: sha512-k0+QifbKe3Wp6dznQIhn1bQ/shR8yMk1ypfWQFOAr0ylXXlKMXFxfpRyxH3awbTDRBpi/SxIIaBTAzflGxBSgg==}
     dependencies:
@@ -2856,10 +2860,10 @@ packages:
       '@unocss/rule-utils': 66.2.1
     dev: true
 
-  /@unocss/preset-rem-to-px@66.2.1:
-    resolution: {integrity: sha512-Bh3aobjYOyIz83RW/sZTBecd7+SrfgMDiK83oIWrUVjVJxY6bfxO82DC6HANuM4xNHwum/7el2IklNLnQT25bg==}
+  /@unocss/preset-rem-to-px@66.2.2:
+    resolution: {integrity: sha512-+EDiN+bwJoGaj9IdVQVuc80PDaOzySHQ7Gr7wjQwjSK8D9ErkD+y4Eo6F/ZmtX40b500N0kEnD+Z4xXAUNGzAw==}
     dependencies:
-      '@unocss/core': 66.2.1
+      '@unocss/core': 66.2.2
     dev: true
 
   /@unocss/preset-tagify@0.62.2:
@@ -2969,7 +2973,7 @@ packages:
     resolution: {integrity: sha512-uzi8onV53XXXjxI9ynUdk+9DngUYsy7uR4YFbTFUMF758SnNLil/MhJ9AeJGCUnl/3skZR6CZi8ne3IBJVnZAw==}
     engines: {node: '>=14'}
     dependencies:
-      '@unocss/core': 66.2.1
+      '@unocss/core': 66.2.2
       magic-string: 0.30.17
     dev: true
 
@@ -6124,8 +6128,8 @@ packages:
       unique-string: 2.0.0
     dev: false
 
-  /terser@5.42.0:
-    resolution: {integrity: sha512-UYCvU9YQW2f/Vwl+P0GfhxJxbUGLwd+5QrrGgLajzWAtC/23AX0vcise32kkP7Eu0Wu9VlzzHAXkLObgjQfFlQ==}
+  /terser@5.43.0:
+    resolution: {integrity: sha512-CqNNxKSGKSZCunSvwKLTs8u8sGGlp27sxNZ4quGh0QeNuyHM0JSEM/clM9Mf4zUp6J+tO2gUXhgXT2YMMkwfKQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
